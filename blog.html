@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universty Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/all.css">
+</head>
+<body>
+    <section class="subHeader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="navLinks" id="navLinkss">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" id="xy" onclick="showMenu()"></i>
+            
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+
+    </section>
+    <!-- ----------BLOG PAGE CONTENT---------- -->
+    <section class="blogContent">
+        <div class="row">
+            <div class="blogLeft">
+                <img src="images/certificate.jpg" alt="">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestias dolores facilis ipsam veniam explicabo, fuga mollitia, quam vel sint nemo hic at tempora eum odit odio velit quos magni assumenda modi earum! At natus, repellat doloribus laboriosam modi fuga tempora dolores quae amet rem ipsum quis numquam ab corporis?</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit odio beatae voluptate quia in dignissimos, vitae vel sapiente ipsa neque sit nulla, quaerat sequi natus consequuntur ut ullam at perspiciatis illum ipsam alias iste! Vero fugit dignissimos nulla distinctio, odit delectus alias voluptate quam, aliquid odio accusantium eos? Accusamus blanditiis omnis voluptatem explicabo minus molestias, vel, laborum velit et ut ad, perferendis incidunt id? Tempore magnam sit hic, corrupti deleniti distinctio soluta et nobis obcaecati reiciendis debitis odit quae qui itaque quisquam fugiat placeat ipsa. Dolores incidunt vero doloremque optio dolor labore ad repudiandae, adipisci voluptatum porro quisquam, id saepe.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat perspiciatis architecto eligendi atque quas, fuga magni enim tenetur repudiandae quod blanditiis sed labore consequatur itaque. Maxime quidem unde, molestiae totam voluptatibus deleniti quos beatae fuga quae voluptatem aperiam magni fugit doloribus ipsa adipisci eum similique, accusantium veritatis quia! Animi.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel ut iusto dicta. Vero, voluptatum ad vel hic odio, quas natus excepturi vitae, nemo ipsam quos laudantium est quis facere!</p>
+
+
+                <div class="commentBox">
+                    <h3>Leave a comment</h3>
+                    <form action="" class="commentForm">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="heroBTN red">POST COMMENT </button>
+                    </form>
+                </div>
+            </div>
+            <div class="blogRight">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ----------Footer-------- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis repellendus suscipit, <br> nesciunt eos commodi quod ipsum in neque fuga velit, cumque, sit rem facere.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+
+    </section>
+
+
+    <script>
+        var navLinkss =document.getElementById("navLinkss");
+
+        function showMenu(){
+            navLinkss.style.right = "-20px";
+        }
+        function hideMenu(){
+            navLinkss.style.right = "-200px";
+        }
+        document.addEventListener('click', e=>{
+            if(
+                !e.composedPath().includes(navLinkss) &&
+                !e.composedPath().includes(xy)
+            ){
+                navLinkss.style.right="-200px"
+            }
+        })
+    </script>
+</body>
+</html>

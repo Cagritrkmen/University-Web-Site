@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universty Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/all.css">
+</head>
+<body>
+    <section class="subHeader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="navLinks" id="navLinkss">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" id="xy" onclick="showMenu()"></i>
+            
+        </nav>
+        <h1>Our Courses</h1>
+
+    </section>
+
+    <!-- -------------- COURSE ------------ -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="courseCol">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, minus dolores incidunt ullam non earum velit vitae qui, tempore odit fugiat quaerat quod deleniti consectetur voluptates libero omnis reprehenderit consequuntur animi distinctio.</p>
+            </div>
+            <div class="courseCol">
+                <h3>Degree</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, minus dolores incidunt ullam non earum velit vitae qui, tempore odit fugiat quaerat quod deleniti consectetur voluptates libero omnis reprehenderit consequuntur animi distinctio.</p>
+            </div>
+            <div class="courseCol">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, minus dolores incidunt ullam non earum velit vitae qui, tempore odit fugiat quaerat quod deleniti consectetur voluptates libero omnis reprehenderit consequuntur animi distinctio.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- ------------facilities---------- -->
+
+<section class="facilities">
+    <h1>Our facilities</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+    <div class="row">
+        <div class="facilitiesCol">
+            <img src="images/library.png" alt="">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam est ea quibusdam consectetur dignissimos accusamus sit dolore.</p>
+        </div>
+        <div class="facilitiesCol">
+            <img src="images/basketball.png" alt="">
+            <h3>Largest Play Ground</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam est ea quibusdam consectetur dignissimos accusamus sit dolore.</p>
+        </div>
+        <div class="facilitiesCol">
+            <img src="images/cafeteria.png" alt="">
+            <h3>Tast and Healty Food</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam est ea quibusdam consectetur dignissimos accusamus sit dolore.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- ----------Footer-------- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis repellendus suscipit, <br> nesciunt eos commodi quod ipsum in neque fuga velit, cumque, sit rem facere.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+
+    </section>
+
+
+    <script>
+        var navLinkss =document.getElementById("navLinkss");
+
+        function showMenu(){
+            navLinkss.style.right = "-20px";
+        }
+        function hideMenu(){
+            navLinkss.style.right = "-200px";
+        }
+        document.addEventListener('click', e=>{
+            if(
+                !e.composedPath().includes(navLinkss) &&
+                !e.composedPath().includes(xy)
+            ){
+                navLinkss.style.right="-200px"
+            }
+        })
+    </script>
+</body>
+</html>
